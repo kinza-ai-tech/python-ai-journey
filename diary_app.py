@@ -23,6 +23,7 @@ while True:
                 content = f.read()
             print("\nYour diary entries:")
             print(content)
+        except FileNotFoundError:
             print("No entries yet. Write one first!")
 
     elif choice == "3":
